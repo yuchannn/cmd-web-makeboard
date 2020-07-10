@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <style>
+            h1{
+                text-align: center;
+            }
+            #grid{
+                background-color: white;
+                width:350px; height:380px;
+                border: 1px solid lightgray;
+                display:grid;
+                grid-template-rows: 50px 50px 50px 50px 80px 80px;
+                margin:0 auto;
+                padding: 20px;
+            }
+            #colset{
+                text-align: center;
+                display:grid;
+                grid-template-columns: 1.5fr 1fr;
+            }
+            #regisbt{
+                background-color: cornflowerblue;
+                color: cornsilk;
+                width: 250px;
+                height: 35px;
+                font-size: 15px;
+            }
+            .box{
+                width: 220px;
+                height: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>회원 가입</h1>
+        <div id="grid">
+            <div>
+                이름 : <input type="text" class="box" name="name" value="이름">
+            </div>
+            <div>
+                ID : <input type="text" class="box" name="id" value="이메일">
+            </div>
+            <div>
+                비밀번호 : <input type="password" class="box" name="pwd" value="비밀번호">
+            </div>
+            <div>
+                비밀번호 확인 : <input type="password" class="box" name="pwd check" value="비밀번호">
+            </div>
+            <div>
+                <input type="checkbox" name="remember" value="y"> 서비스에 대한 소식을 이메일로 받습니다.<br>
+                <input type="checkbox" name="remember" value="y"> 서비스 약관에 동의합니다.
+            </div>
+            <div style="text-align: center;">
+                <input type="button" id="regisbt" value="가입하기">
+            </div>
+            <div id="colset"> 
+                <div>
+                    이미 회원이신가요?
+                </div>
+                <div>
+                    <a href="login.html">로그인</a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
